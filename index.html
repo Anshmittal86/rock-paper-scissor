@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+
+  <!--***************** SEO Meta Tags - START ******************-->
+  <meta name="theme-color" content="#65B741">
+  <meta name="author" content="Ansh Mittal" />
+  <meta name="description"
+    content="Play Rock Paper Scissors against the computer. Choose your move—Rock, Paper, or Scissors—and see if you can outsmart your opponent. Fun and addictive game to test your strategy and intuition.">
+  <!--***************** SEO Meta Tags - END ******************-->
+
+  <!--***************** External Links - START ******************-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!--***************** External Links - END ******************-->
+  <link rel="stylesheet" href="./css/style_min.css">
+</head>
+
+<body>
+  <!--***************** Main Container - START ******************-->
+  <main>
+    <!--***************** Game Loader - START ******************-->
+    <div class="game-loader">
+      <div class="game-icon-circle">
+      </div>
+      <div class="timer">0%</div>
+      <button class="btn" aria-label="Start the game" tabindex="0">Start game</button>
+    </div>
+    <!--***************** Game Loader - END ******************-->
+
+    <section>
+
+      <!--***************** Game Field - START ******************-->
+
+      <div id="game-field">
+
+        <!-- Computer Field -->
+        <div id="computer-field">
+          <h2>Computer</h2>
+          <div id="computer-choice" class="img-container">
+          </div>
+        </div>
+
+        <div id="yellow-line">
+          <span id="result">Select Your choice</span>
+        </div>
+
+        <!-- User field -->
+        <div id="user-field">
+          <h2 id="user-name">User</h2>
+          <div id="user-choice" class="img-container">
+          </div>
+        </div>
+
+        <h2 id="user-score">Your score: <span id="score">0</span></h2>
+
+      </div>
+
+      <!--***************** Game Field - END ******************-->
+
+      <!--***************** User Choice - START ******************-->
+
+      <div id="user-choices-container">
+        <button id="rock" class="choice" aria-label="Choose Rock" tabindex="0">
+          <img src="./images/rock-icon.png" class="user-choice-image" alt="Rock Icon" width="40px">
+          <span>rock</span>
+        </button>
+        <button id="paper" class="choice" aria-label="Choose Paper" tabindex="0">
+          <img src="./images/paper-icon.png" class="user-choice-image" alt="Paper Icon" width="40px">
+          <span>paper</span>
+        </button>
+        <button id="scissor" class="choice" aria-label="Choose scissor" tabindex="0">
+          <img src="./images/scissor-icon.png" class="user-choice-image" alt="Scissor Icon" width="40px">
+          <span>scissor</span>
+        </button>
+      </div>
+
+      <!--***************** User Choice - END  ******************-->
+
+    </section>
+
+    <!--***************** Main Container - END ******************-->
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./javascript/script_min.js"></script>
+</body>
+
+</html>
